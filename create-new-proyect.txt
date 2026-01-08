@@ -13,3 +13,5 @@ npm run dev
 Metodos de trabajo con Vue
 Composition API *
 Options api
+
+Reactividad
