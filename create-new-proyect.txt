@@ -1,0 +1,11 @@
+Terminal
+
+npm create vite@latest
+    nombre proyecto
+    nombre de paquete
+
+    Escoger Vue
+
+npm install ó npm i [actualizar dependencias. desde el package.json]
+
+npm run dev
