@@ -1,25 +1,14 @@
 <script setup>
-    import { ref } from "vue";
-
-    let number = ref(0);
-
-    const addOne = () => {
-        number.value++;
-    }
+    const myId = "patata";
+    const myValue = "patata";
 </script>
 
 <template>
-    <h1>Hola a todos</h1>
-    <h2 @click="addOne">{{ number }}</h2>
+    <h1 v-bind:id="myId">Hola a todos</h1>
+    <h2 :id="myId">Hola a todos</h2>
+
+    <input type="text" :value="myValue">
 </template>
 
-<!-- scoped: atributo para que los estilos solo se apliquen a al componente actual -->
-<style scoped>
-    .title {
-        text-transform: uppercase;
-        text-decoration: underline;
-    }
-    h2 {
-        cursor: pointer;
-    }
-</style>
+
+<style scoped></style>
