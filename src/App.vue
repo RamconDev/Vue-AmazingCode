@@ -3,9 +3,13 @@
     import VBindComponent from './components/directivas/VBindComponent.vue';
     import ClickComponen from './components/eventos/ClickComponen.vue';
     import VariableReactiva from './components/VariableReactiva.vue';
+    import CambiarClasesDinamicamente from './components/CambiarClasesDinamicamente.vue'
 </script>
 
 <template>
+    <h2>Clases Dinamicas</h2>
+    <CambiarClasesDinamicamente></CambiarClasesDinamicamente>
+
     <h2>Directivas</h2>
     <ul>
         <li>
