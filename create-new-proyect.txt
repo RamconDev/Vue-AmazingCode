@@ -9,3 +9,7 @@ npm create vite@latest
 npm install ó npm i [actualizar dependencias. desde el package.json]
 
 npm run dev
+
+Metodos de trabajo con Vue
+Composition API *
+Options api
