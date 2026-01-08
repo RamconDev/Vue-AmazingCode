@@ -1,13 +1,48 @@
 <script setup>
-    import { ref } from 'vue';
-    
-    const myValue = ref("Mi Valor")
+    import VModelComponent from './components/directivas/VModelComponent.vue';
+    import VBindComponent from './components/directivas/VBindComponent.vue';
+    import ClickComponen from './components/eventos/ClickComponen.vue';
+    import VariableReactiva from './components/VariableReactiva.vue';
 </script>
 
 <template>
-    <h1>{{ myValue }}</h1>
-    <input type="text" v-model="myValue">
+    <h2>Directivas</h2>
+    <ul>
+        <li>
+            <VModelComponent></VModelComponent>
+        </li>
+        <li>
+            <VBindComponent></VBindComponent>
+        </li>
+    </ul>
+
+    <h2>NPI</h2>
+    <ul>
+        <li>
+            <VariableReactiva></VariableReactiva>
+        </li>
+    </ul>
+
+    <h2>Eventos</h2>
+    <ul>
+        <li>
+            <ClickComponen></ClickComponen>
+        </li>
+    </ul>
 </template>
 
 
-<style scoped></style>
+<style>
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    ul li {
+        border: 1px solid white;
+        padding: 20px;
+    }
+    ul li p {
+        max-width: 300px;
+    }
+</style>
