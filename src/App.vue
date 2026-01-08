@@ -1,13 +1,12 @@
 <script setup>
-    const myId = "patata";
-    const myValue = "patata";
+    import { ref } from 'vue';
+    
+    const myValue = ref("Mi Valor")
 </script>
 
 <template>
-    <h1 v-bind:id="myId">Hola a todos</h1>
-    <h2 :id="myId">Hola a todos</h2>
-
-    <input type="text" :value="myValue">
+    <h1>{{ myValue }}</h1>
+    <input type="text" v-model="myValue">
 </template>
 
 
