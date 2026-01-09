@@ -7,9 +7,13 @@
     import VIfCopmponen from './components/directivas/VIfCopmponen.vue';
     import VForComponent from './components/directivas/VForComponent.vue';
     import PadreComponent from './components/props/PadreComponent.vue';
+    import PadreEventComponent from './components/component-events/PadreEventComponent.vue';
 </script>
 
 <template>
+    <h2>Componen Event</h2>
+    <PadreEventComponent></PadreEventComponent>
+
     <h2>Props</h2>
     <PadreComponent></PadreComponent>
 
