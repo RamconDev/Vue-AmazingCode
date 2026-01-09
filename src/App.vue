@@ -6,9 +6,13 @@
     import CambiarClasesDinamicamente from './components/CambiarClasesDinamicamente.vue'
     import VIfCopmponen from './components/directivas/VIfCopmponen.vue';
     import VForComponent from './components/directivas/VForComponent.vue';
+    import PadreComponent from './components/props/PadreComponent.vue';
 </script>
 
 <template>
+    <h2>Props</h2>
+    <PadreComponent></PadreComponent>
+
     <h2>Clases Dinamicas</h2>
     <CambiarClasesDinamicamente></CambiarClasesDinamicamente>
 
@@ -45,6 +49,10 @@
 
 
 <style>
+    h2 {
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
     ul {
         display: flex;
         flex-wrap: wrap;
