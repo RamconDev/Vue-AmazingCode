@@ -1,5 +1,19 @@
 <script setup>
     let movies = ["Lor of the rings", "Star Wars", "Dune"]
+    let animals = [
+    {
+        id: 1,
+        name: "dog",
+    },
+    {
+        id: 2,
+        name: "cat",
+    },
+    {
+        id: 3,
+        name: "bird",
+    }
+]
 </script>
 
 <template>
@@ -8,6 +22,12 @@
     <ul>
         <li v-for="(movie, index) in movies" :key="movie">
             <span>{{ index + 1 }} - {{ movie }}</span>
+        </li>
+    </ul>
+
+    <ul>
+        <li v-for="animal in animals" :key="animal.id">
+            {{ animal.name }}
         </li>
     </ul>
 </template>
