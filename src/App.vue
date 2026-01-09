@@ -5,6 +5,7 @@
     import VariableReactiva from './components/VariableReactiva.vue';
     import CambiarClasesDinamicamente from './components/CambiarClasesDinamicamente.vue'
     import VIfCopmponen from './components/directivas/VIfCopmponen.vue';
+    import VForComponent from './components/directivas/VForComponent.vue';
 </script>
 
 <template>
@@ -13,6 +14,9 @@
 
     <h2>Directivas</h2>
     <ul>
+        <li>
+            <VForComponent></VForComponent>
+        </li>
         <li>
             <VIfCopmponen></VIfCopmponen>
         </li>
