@@ -4,6 +4,7 @@
     import ClickComponen from './components/eventos/ClickComponen.vue';
     import VariableReactiva from './components/VariableReactiva.vue';
     import CambiarClasesDinamicamente from './components/CambiarClasesDinamicamente.vue'
+    import VIfCopmponen from './components/directivas/VIfCopmponen.vue';
 </script>
 
 <template>
@@ -12,6 +13,9 @@
 
     <h2>Directivas</h2>
     <ul>
+        <li>
+            <VIfCopmponen></VIfCopmponen>
+        </li>
         <li>
             <VModelComponent></VModelComponent>
         </li>
