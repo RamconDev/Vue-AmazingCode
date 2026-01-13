@@ -10,9 +10,13 @@
     import PadreEventComponent from './components/component-events/PadreEventComponent.vue';
     import PadreSComponent from './components/slots/PadreSComponent.vue';
     import ComputedComponent from './components/ComputedComponent.vue';
+    import WatchComponent from './components/WatchComponent.vue';
 </script>
 
 <template>
+    <h2>Watch</h2>
+    <WatchComponent></WatchComponent>
+
     <h2>ComputedComponent</h2>
     <ComputedComponent></ComputedComponent>
 
