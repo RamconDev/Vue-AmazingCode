@@ -8,9 +8,15 @@
     import VForComponent from './components/directivas/VForComponent.vue';
     import PadreComponent from './components/props/PadreComponent.vue';
     import PadreEventComponent from './components/component-events/PadreEventComponent.vue';
+    import PadreSComponent from './components/slots/PadreSComponent.vue';
 </script>
 
 <template>
+    <section>
+        <h2>Slots</h2>
+        <PadreSComponent></PadreSComponent>
+    </section>
+
     <h2>Componen Event</h2>
     <PadreEventComponent></PadreEventComponent>
 
@@ -62,7 +68,7 @@
         flex-wrap: wrap;
         list-style: none;
     }
-    ul li {
+    ul li, section {
         border: 1px solid white;
         padding: 20px;
     }
