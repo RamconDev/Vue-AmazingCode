@@ -9,13 +9,15 @@
     import PadreComponent from './components/props/PadreComponent.vue';
     import PadreEventComponent from './components/component-events/PadreEventComponent.vue';
     import PadreSComponent from './components/slots/PadreSComponent.vue';
+    import ComputedComponent from './components/ComputedComponent.vue';
 </script>
 
 <template>
-    <section>
-        <h2>Slots</h2>
-        <PadreSComponent></PadreSComponent>
-    </section>
+    <h2>ComputedComponent</h2>
+    <ComputedComponent></ComputedComponent>
+
+    <h2>Slots</h2>
+    <PadreSComponent></PadreSComponent>
 
     <h2>Componen Event</h2>
     <PadreEventComponent></PadreEventComponent>
