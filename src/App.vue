@@ -12,10 +12,14 @@
     import ComputedComponent from './components/ComputedComponent.vue';
     import WatchComponent from './components/WatchComponent.vue';
     import WatchEffectComponent from './components/WatchEffectComponent.vue';
+    import FormComponent from './components/FormComponent.vue';
 import { watchEffect } from 'vue';
 </script>
 
 <template>
+    <h2>Form</h2>
+    <FormComponent></FormComponent>
+
     <h2>Watch Effect</h2>
     <WatchEffectComponent></WatchEffectComponent>
 
