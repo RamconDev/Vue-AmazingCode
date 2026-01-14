@@ -11,9 +11,14 @@
     import PadreSComponent from './components/slots/PadreSComponent.vue';
     import ComputedComponent from './components/ComputedComponent.vue';
     import WatchComponent from './components/WatchComponent.vue';
+    import WatchEffectComponent from './components/WatchEffectComponent.vue';
+import { watchEffect } from 'vue';
 </script>
 
 <template>
+    <h2>Watch Effect</h2>
+    <WatchEffectComponent></WatchEffectComponent>
+
     <h2>Watch</h2>
     <WatchComponent></WatchComponent>
 
