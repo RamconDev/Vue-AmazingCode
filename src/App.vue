@@ -17,6 +17,11 @@ import { watchEffect } from 'vue';
 </script>
 
 <template>
+    <RouterView/>
+</template>
+
+<!-- <template>
+
     <h2>Form</h2>
     <FormComponent></FormComponent>
 
@@ -70,7 +75,7 @@ import { watchEffect } from 'vue';
             <ClickComponen></ClickComponen>
         </li>
     </ul>
-</template>
+</template> -->
 
 
 <style>
