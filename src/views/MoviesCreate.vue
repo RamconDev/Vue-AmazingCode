@@ -16,7 +16,7 @@
             alert("Llena todos los campos del formulario");
             return;
         }
-        movieStore.addMovie(movie);
+        movieStore.addMovie({ ...movie });
     };
 </script>
 

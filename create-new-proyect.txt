@@ -21,3 +21,6 @@ Para rutas instalar
 
 Gestor de estados [stores]
     npm install pinia
+
+-Persistencia de datos
+    npm install pinia-plugin-persistedstate

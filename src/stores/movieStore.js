@@ -26,4 +26,6 @@ export const useMovieStore = defineStore("MovieStore", () => {
         movies,
         addMovie
     }
+}, {
+    persist: true
 });
