@@ -1,9 +1,14 @@
 <script setup>
+import HeaderComponent from '../components/HeaderComponent.vue';
+
 
 </script>
 
 <template>
-    <h1>HOME</h1>
+    <HeaderComponent/>
+
+    <h2>HOME</h2>
+
 </template>
 
 <style scoped>

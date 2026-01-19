@@ -1,5 +1,6 @@
 <script setup>
     import { ref } from 'vue';
+import HeaderComponent from '../components/HeaderComponent.vue';
 
     const movies = ref([
         {
@@ -21,7 +22,10 @@
 </script>
 
 <template>
-    <h1>MOVIES</h1>
+    <HeaderComponent/>
+
+    <h2>MOVIES</h2>
+
     <ul>
         <li  v-for="movie in movies" :key="movie.title" class="movie">
             <h2>{{ movie.title }}</h2>
