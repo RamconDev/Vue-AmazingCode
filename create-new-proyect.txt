@@ -24,3 +24,5 @@ Gestor de estados [stores]
 
 -Persistencia de datos
     npm install pinia-plugin-persistedstate
+
+Navegacion programatica

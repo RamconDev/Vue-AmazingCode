@@ -2,6 +2,7 @@
     import { reactive } from 'vue';
     import HeaderComponent from '../components/HeaderComponent.vue';
     import { useMovieStore } from '../stores/movieStore';
+    import router from '../router';
 
     const movieStore = useMovieStore();
 
@@ -16,7 +17,15 @@
             alert("Llena todos los campos del formulario");
             return;
         }
+
         movieStore.addMovie({ ...movie });
+
+        // Limpiar formulario
+        movie.title = "";
+        movie.duration = 0;
+        movie.director = "";
+
+        router.push({ name: "Movies"})
     };
 </script>
 
