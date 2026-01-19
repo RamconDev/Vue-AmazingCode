@@ -18,3 +18,6 @@ Reactividad
 
 Para rutas instalar
     npm i vue-router
+
+Gestor de estados [stores]
+    npm install pinia
