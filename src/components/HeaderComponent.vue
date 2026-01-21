@@ -1,5 +1,7 @@
 <script setup>
+    import { useUserStore } from "../stores/userStore";
 
+    const userStore = useUserStore();
 </script>
 
 <template>
@@ -18,13 +20,21 @@
                 </li>
             </ul>
         </nav>
+        <div class="login">
+            <p v-if="userStore.user">{{ userStore.user.name }}</p>
+            <button @click="userStore.getUser()">Login</button>
+        </div>
     </header>    
 </template>
 
 <style scoped>
     header {
         display: grid;
-        grid-template-columns:  200px auto;
+        grid-template-columns:  200px auto 200px;
+    }
+    header .login {
+        display: flex;
+        gap:10px;
     }
     header h1 {
         padding: 0;
