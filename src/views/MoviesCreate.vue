@@ -1,5 +1,5 @@
 <script setup>
-    import { reactive } from 'vue';
+    import { onUpdated, reactive } from 'vue';
     import HeaderComponent from '../components/HeaderComponent.vue';
     import { useMovieStore } from '../stores/movieStore';
     import router from '../router';
@@ -27,6 +27,10 @@
 
         router.push({ name: "Movies"})
     };
+
+    onUpdated( () => {
+        console.log("Create movie component updated")
+    });
 </script>
 
 <template>

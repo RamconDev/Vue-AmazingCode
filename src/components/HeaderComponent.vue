@@ -1,5 +1,6 @@
 <script setup>
-    import { useUserStore } from "../stores/userStore";
+    import { onMounted } from "vue";
+import { useUserStore } from "../stores/userStore";
 
     const userStore = useUserStore();
 </script>
