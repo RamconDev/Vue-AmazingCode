@@ -26,3 +26,5 @@ Gestor de estados [stores]
     npm install pinia-plugin-persistedstate
 
 Navegacion programatica
+
+Rutas Parametricas

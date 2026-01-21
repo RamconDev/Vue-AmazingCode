@@ -13,7 +13,9 @@
 
     <ul>
         <li  v-for="movie in movieStore.movies" :key="movie.title" class="movie">
-            <h2>{{ movie.title }}</h2>
+            <router-link :to="{ name:'MoviesDetail', params: { movieTitle:movie.title } }">
+                Title: {{  movie.title }}
+            </router-link>
             <p>Director: {{ movie.director }}</p>
             <p>Duration: {{ movie.duration }}</p>
         </li>
