@@ -28,3 +28,21 @@ Gestor de estados [stores]
 Navegacion programatica
 
 Rutas Parametricas
+
+Vitest
+    npm install vitest @vue/test-utils jsdom -D
+
+    vite.config.js
+        export default defineConfig({
+        test: {
+            globals: true,
+            environment: 'jsdom'
+        }
+        })
+
+    package.json
+        "scripts": {
+            "test": "vitest"
+        },
+
+    npm run test [ejecutar pruebas test]
