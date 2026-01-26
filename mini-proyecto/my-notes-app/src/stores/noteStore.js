@@ -31,4 +31,6 @@ export const useNoteStore = defineStore("notes", () => {
     notes,
     addNote
   }
-})
+}, {
+  persist: true
+});
