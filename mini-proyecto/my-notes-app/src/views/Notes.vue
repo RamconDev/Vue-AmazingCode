@@ -1,4 +1,5 @@
 <script setup>
+import CreateNote from '../components/CreateNote.vue';
 import HeaderComponent from '../components/HeaderComponent.vue';
 import NoteCardComponent from '../components/NoteCardComponent.vue';
 import { useNoteStore } from '../stores/noteStore';
@@ -10,6 +11,8 @@ import { useNoteStore } from '../stores/noteStore';
   <HeaderComponent/>
   <section id="notes-page">
     <h2>Notes</h2>
+    
+    <CreateNote></CreateNote>
     <ul class="note-list">
       <li v-for="note in noteStore.notes" :key="note.id">
         <NoteCardComponent :note="note"></NoteCardComponent>

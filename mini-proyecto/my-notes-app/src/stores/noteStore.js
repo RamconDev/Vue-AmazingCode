@@ -15,7 +15,20 @@ export const useNoteStore = defineStore("notes", () => {
     },
   ]);
 
+  const createId = () => {
+    return Date.now().toString(36) + Math.random().toString(36).slice(2);
+  }
+
+  const addNote = (title) => {
+    notes.value.unshift({
+      id: createId,
+      title: title,
+      marked: false
+    });
+  }
+
   return {
     notes,
+    addNote
   }
 })
