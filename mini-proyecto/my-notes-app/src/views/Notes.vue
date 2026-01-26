@@ -1,5 +1,6 @@
 <script setup>
 import HeaderComponent from '../components/HeaderComponent.vue';
+import NoteCardComponent from '../components/NoteCardComponent.vue';
 import { useNoteStore } from '../stores/noteStore';
 
   const noteStore = useNoteStore();
@@ -11,7 +12,7 @@ import { useNoteStore } from '../stores/noteStore';
     <h2>Notes</h2>
     <ul class="note-list">
       <li v-for="note in noteStore.notes" :key="note.id">
-        {{ note.title }}
+        <NoteCardComponent :note="note"></NoteCardComponent>
       </li>
     </ul>
   </section>
@@ -36,11 +37,6 @@ import { useNoteStore } from '../stores/noteStore';
       flex-direction: column;
       gap: 10px;
       list-style: none;
-      li {
-        border: 1px solid grey;
-        border-radius: 8px;
-        padding: 12px 15px;
-      }
     }
   }
 </style>
