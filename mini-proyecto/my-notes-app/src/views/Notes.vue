@@ -1,10 +1,12 @@
 <script setup>
+import HeaderComponent from '../components/HeaderComponent.vue';
 import { useNoteStore } from '../stores/noteStore';
 
   const noteStore = useNoteStore();
 </script>
 
 <template>
+  <HeaderComponent/>
   <section id="notes-page">
     <h2>Notes</h2>
     <ul class="note-list">
@@ -23,10 +25,10 @@ import { useNoteStore } from '../stores/noteStore';
     align-items: center;
 
     h2 {
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 16px;
+      font-size: 24px;
       text-align: center;
       text-transform: uppercase;
+      margin-bottom: 30px;
     }
 
     .note-list {
