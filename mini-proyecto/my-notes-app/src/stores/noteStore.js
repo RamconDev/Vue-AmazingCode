@@ -4,8 +4,29 @@ import { ref } from "vue";
 export const useNoteStore = defineStore("notes", () => {
   // https://beeceptor.com/crud-api/
   const API_URL = "https://ca33b31f905418e91256.free.beeceptor.com/api/notes";
+
+  // ✅ CREATE
+  const addNote = async (title) => {
+    const newNote = {
+      id: createId(),
+      title: title,
+      marked: false
+    };
+
+    try {
+      await fetch(API_URL, {
+        method: "POST",
+        body: JSON.stringify(newNote)
+      });
+
+      getNotes();
+    }
+    catch (e) {
+      error.value = true;
+    }
+  }
   
-  // ✅
+  // ✅ READ
   const notes = ref([]);
   const loading = ref(false);
   const error = ref(false);
@@ -28,27 +49,6 @@ export const useNoteStore = defineStore("notes", () => {
 
   const createId = () => {
     return Date.now().toString(36) + Math.random().toString(36).slice(2);
-  }
-
-  // ✅
-  const addNote = async (title) => {
-    const newNote = {
-      id: createId(),
-      title: title,
-      marked: false
-    };
-
-    try {
-      await fetch(API_URL, {
-        method: "POST",
-        body: JSON.stringify(newNote)
-      });
-
-      getNotes();
-    }
-    catch (e) {
-      error.value = true;
-    }
   }
 
   return {
